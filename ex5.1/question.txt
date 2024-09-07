@@ -1,0 +1,6 @@
+What does .measure instruction perform?
+
+The .measure instruction measure the time between two trigger events specified by the command 
+and save the result in a variable named as specified. For each trigger event is possible 
+to specify the name of the target signal, the target value in which the command has to measure the time
+and the edge direction (RISE/FALL).

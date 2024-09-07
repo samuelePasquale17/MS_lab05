@@ -1,0 +1,36 @@
+	delay in vdd is around=> 5%
+	delay in GND is around=> 4%
+	delay in C   is around=> 4%
+
+    current diffrence for GND => 16.14%
+	current diffrence for VDD => 28.98%
+	current diffrence for C   => 20.43%
+
+
+
+nandLLX8MaxLoad
+
+  RNAND        =  6.3473E-11
+  FNAND        =  5.7358E-11
+  NANDDELAYHL  =  2.6755E-11
+  NANDDELAYLH  =  4.4509E-11
+  MAXIGNDF     =  4.0419E-04
+  MAXIVDDR     = -3.0291E-04
+  MAXIGNDR     =  1.3282E-04
+  MAXIVDDF     = -1.6557E-04
+  MAXILOADF    = -1.2658E-06
+  MAXILOADR    =  1.0162E-06
+
+nandHScharMaxLoad
+  RNAND                 =  6.7604E-11
+  FNAND                 =  6.8830E-11
+  NANDDELAY             =  2.0851E-11
+  NANDHSX1_PROPAGATION  =  2.0851E-11
+  MAXILOADF             = -1.2504E-06
+  MAXILOADR             =  1.1429E-06
+  MAXILOADF             = -5.4597E-08
+  MAXILOADR             =  5.6165E-08
+  MAXIGNDF              =  7.7056E-05
+  MAXIVDDR              = -7.0423E-05
+  MAXIGNDR              =  4.5692E-05
+  MAXIVDDF              = -4.7680E-05

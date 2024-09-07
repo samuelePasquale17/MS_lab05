@@ -1,0 +1,6 @@
+
+                            SIMULATION        .measure
+Rising propagation time         .49p            .56p
+Falling edge                    .73p            .74p
+Rising edge                     .88p            .89p
+Falling propagation time        .55p            .49p

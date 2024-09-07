@@ -1,0 +1,51 @@
+
+Comparison between LLx8 and HSx8
+
+Delay:
+	The time at which the voltage at the output node (VOUT) reaches 50% of its maximum value is commonly used to evaluate the delay of a gate. From the
+	waveforms, observe the transition edges of VOUT and compare their timings across different loads. If the low leakage (LL) gate waveforms generally reach their
+	midpoints later than the high speed (HS) gates, then the 
+	gates have longer delay times.
+
+
+Current:
+	Look at the current waveforms (I(VDUMMY_C8), I(VDUMMY_GND8),
+	I(VDUMMY_VDD8)) to analyze the current spikes during the switching
+	activity. Higher current spikes might be indicative of faster switching
+	but also greater power consumption and potential reliability concerns.
+	If the LL gates show smaller current peaks than the HS gates, it suggests
+	that LL gates consume less power during switching, which is expected as
+	they are optimized for lower leakage and generally slower operations.
+
+
+
+Comparison between LL and HS:
+
+Delay:
+	High Speed (HS) Gates Delay:
+	The average propagation delay from netlist data is around 20.85 ps (2.0851E-11 seconds) for the lighter load
+	(5.00E-17) and significantly longer under heavier load conditions.
+	Low Leakage (LL) Gates Delay:
+	The average propagation delay appears slightly longer, as shown in waveform. This typically happens due to the trade-off
+	between speed and power consumption where low leakage gates are optimized for power efficiency at the
+	cost of speed.
+	
+	delay in vdd is around=> 5%
+	delay in GND is around=> 4%
+	delay in C   is around=> 4% 
+
+
+
+Current:
+	HS Gates Current Peaks:
+	Peak current values for HS gates are significantly higher, indicating more robust switching behavior but at the cost of higher power consumption and possibly more significant stress on 		the device.
+	LL Gates Current Peaks:
+	Lower peak currents for LL gates demonstrate their primary advantage: reduced power consumption which is crucial for power-sensitive applications
+
+	current diffrence for GND => 16.14%
+	current diffrence for VDD => 28.98%
+	current diffrence for C   => 20.43%
+		
+	
+Lower peak currents for LL gates demonstrate their primary advantage: reduced power consumption which is crucial for power-sensitive applications.
+Disadvantages of LL Gates: Increased delay, which might affect the performance in speed-sensitive applications.

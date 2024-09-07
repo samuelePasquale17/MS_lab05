@@ -1,0 +1,56 @@
+nandHScharMaxLoad
+
+Load 5.0000E-17f
+  RNAND                 =  6.7604E-11
+  FNAND                 =  6.8830E-11
+  NANDDELAY             =  2.0851E-11
+  NANDHSX1_PROPAGATION  =  2.0851E-11
+  MAXILOADF             = -1.2504E-06
+  MAXILOADR             =  1.1429E-06
+  MAXIGNDF              =  7.7056E-05
+  MAXIVDDR              = -7.0423E-05
+  MAXIGNDR              =  4.5692E-05
+  MAXIVDDF              = -4.7680E-05
+
+Load 5.0000E-14f
+  RNAND                 =  3.6391E-10
+  FNAND                 =  2.9652E-10
+  NANDDELAY             =  1.8016E-10
+  NANDHSX1_PROPAGATION  =  1.8016E-10
+  MAXILOADF             = -2.3042E-04
+  MAXILOADR             =  1.9972E-04
+  MAXIGNDF              =  2.4077E-04
+  MAXIVDDR              = -2.0919E-04
+  MAXIGNDR              =  1.2571E-05
+  MAXIVDDF              = -1.1039E-05
+
+
+nandHSX8MaxLoad
+
+Load 5.0000E-17f
+  RNAND                 =  6.2179E-11
+  FNAND                 =  6.3836E-11
+  NANDDELAY             =  1.7455E-11
+  NANDHSX8_PROPAGATION  =  1.7455E-11
+  MAXILOADF             = -1.4246E-06
+  MAXILOADR             =  1.2887E-06
+  MAXILOADF             = -5.9746E-08
+  MAXILOADR             =  6.1808E-08
+  MAXIGNDF              =  6.3732E-04
+  MAXIVDDR              = -5.5277E-04
+  MAXIGNDR              =  3.7896E-04
+  MAXIVDDF              = -4.1041E-04
+
+Load 5.0000E-14f
+  RNAND                 =  1.0546E-10
+  FNAND                 =  1.0084E-10
+  NANDDELAY             =  5.2118E-11
+  NANDHSX8_PROPAGATION  =  5.2118E-11
+  MAXILOADF             = -7.2917E-04
+  MAXILOADR             =  6.5614E-04
+  MAXILOADF             = -1.9315E-05
+  MAXILOADR             =  1.8554E-05
+  MAXIGNDF              =  1.0164E-03
+  MAXIVDDR              = -8.8259E-04
+  MAXIGNDR              =  2.7682E-04
+  MAXIVDDF              = -2.7304E-04

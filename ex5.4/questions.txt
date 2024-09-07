@@ -1,0 +1,6 @@
+What happens to the values of delay and power dissipation? Check the output measure and analyze
+the advantages and disadvantages in using the two gates.
+
+What can be noticed from the waveforms is that the nandHSX8MaxLoad gate is faster than the nandHScharMaxLoad, since the slope 
+of the rising and falling edge of Vout is bigger. Thus the main advantage using the first gate are timing perdormaces. 
+However, the side effect is that the current peaks are higher, with an increase in the power consumption as a consequence.

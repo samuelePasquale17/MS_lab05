@@ -1,0 +1,15 @@
+SET UP TIME
+
+From the waveform, we can notice that the input voltage switches with different output time, an so che signal MN and also M will switch with different timing, with M delayed by the inverter's delay.
+The SN signal will acquire the value stored in M when the clock signal will have a rising edge, with a bit of delay.
+The Vin signal, our D signal, will change his value with different timing due to the offset, and so there are some signal that will violate the set up time, that is the time for which the input signal has to be constant in order to be transmitted before the rising edge of the clock, and for example, selected the signal generated with the 58th offset, it hasn't enough time to change his value and store his transition in M, and so the transitions of data_in, that violates the set up time, won't be seen in the final output. This thing happens for every input that changes too late(and too near to the transition of the clock) and violates the set up time.
+
+HOLD TIME
+
+For the hold time, we can notice the same signal of the previous case, we have a clock, CPN and CPI with some delays, that are the signals that feed the transmission gates of the flip flop, and the we have the input signal that this time changes after a first fixed transition for every inputs. With this changes we are able to understand the hold time, that is the time for which the imput signal has to be constant after a change in order to be considered by the circuit.
+In this case, as we can see for the waveform ,the input signal change with different timing due to the offset variable, and some offset will violate the hold time. 
+For example, if we change the input signal very soon after the first transition, this transition won't be detected the second time, and an example can be the signal "data_in" with the offset of 370p, that changes very soon after the first transition of the data_in signal, and so the transitions won't be detected in SN and so also in data_out.(It starts to change, but it doesn't finish the transition, so it remains at high for example).
+
+
+
+SO,AT THE END OF EVERYTHING, WE CAN SAY THAT AN INPUT SIGNAL HAS TO RESPECT A SET UP TIME (iT HAS TO CHANGE AN AMOUNT OF TIME, CALLDE SET UP TIME, BEFORE THE TRANSITION OF THE CLOCK) AND AN HOLD TIME (THE SIGNAL HAS TO BE CONSTANT FOR AN AMOUNT OF TIME CALLED HOLD UP TIME, OTHERWISE THE TRANSITION OF THE SIGNAL WON'T BE DETECTED BY THE CIRCUIT).

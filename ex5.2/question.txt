@@ -1,0 +1,14 @@
+Try to explain the different behavior of the currents when changing the load, and especially the different
+contribution among Vdd current, Gnd current and Cload current in the various transition cases.
+
+From the measures and the waveforms is possible to see that when the NAND gate is switching on/off (rising/falling edge of 
+the output) the bigger the load capacitance, the higher the current peak. 
+When input B has is rising the drop voltage across the PMOS transistor (for input B) is going to be HIGH, switching off it.
+On the other hand the complementar transistor NMOS (for input B) is going to be switched ON. Therefore the NAND gate will experience
+a positive GND current peak because the pull-down network is discharging the load capacitance. Even the Vdd current witness a peak that
+is much more lower. This behavior is due to the fact that during the rising transition, at a certain point, both networks will be active,
+when input B is Vdd/2 approximatelly. Thus both transistors are conducting. but the pull-up transistor (for input B) will drive current
+for a very short periond before beeing switching off. 
+From the output load capacitance it can be noticed that, the bigger the capacitance, the higher the current peak and the wider the 
+current area (i.e more current is needed to charge complitely the load).
+The same conclision are valide when in the opposite case.
